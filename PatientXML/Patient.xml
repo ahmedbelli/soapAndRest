@@ -12,7 +12,7 @@
   <tns:payment>
     <tns:insurance>
     	<tns:limit>1000</tns:limit>
-    	<tns:provider>Blue Cross</tns:provider>
+    	<tns:provider>Blue Test</tns:provider>
     </tns:insurance>
   </tns:payment>
 </tns:patient>
