@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.github.com/Patient"
-	xmlns:tns="http://www.github.com/Patient" elementFormDefault="qualified">
+	xmlns:tns="http://www.github.com/Patient"
+	elementFormDefault="qualified">
 
 	<element name="patient" type="tns:Patient" />
 
@@ -30,11 +31,12 @@
 			<element name="provider" type="string" />
 			<element name="limit" type="int" />
 		</all>
+
 	</complexType>
 
 	<simpleType name="ID">
 		<restriction base="int">
-			<pattern value="[0-9]*" />
+			<pattern value="[0-9]*"></pattern>
 		</restriction>
 	</simpleType>
 
@@ -48,7 +50,9 @@
 		<restriction base="string">
 			<enumeration value="M" />
 			<enumeration value="F" />
+
 		</restriction>
 	</simpleType>
+
 
 </schema>
