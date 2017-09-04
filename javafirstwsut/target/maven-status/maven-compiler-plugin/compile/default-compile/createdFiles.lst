@@ -1,0 +1,6 @@
+com\trainings\ws\soap\PaymentProcessorImpl.class
+com\trainings\ws\soap\dto\PaymentProcessorRequest.class
+com\trainings\ws\soap\dto\CreditCardInfo.class
+com\trainings\ws\soap\UTPasswordCallback.class
+com\trainings\ws\soap\dto\PaymentProcessorResponse.class
+com\trainings\ws\soap\PaymentProcessor.class
