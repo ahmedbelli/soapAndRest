@@ -7,7 +7,10 @@
 	<jaxws:endpoint id="customerOrdersWs" address="/customerOrders"
 		wsdlLocation="WEB-INF/wsdl/CustomerOrders.wsdl" implementor="com.bharath.ws.trainings.impl.CustomersOrdersWSImpl"
 		serviceName="customerOrders:CustomerOrdersService"
-		xmlns:customerOrders="http://trainings.ws.bharath.com/" />
+		xmlns:customerOrders="http://trainings.ws.bharath.com/">
+	</jaxws:endpoint>
+
+	<bean id="siteHandler" class="com.bharat.trainigs.ws.handlers.SiteHandler" />
 
 	<cxf:bus>
 		<cxf:features>

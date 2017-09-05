@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.jws.HandlerChain;
+
 import com.bharath.ws.trainings.CreateOrdersRequest;
 import com.bharath.ws.trainings.CreateOrdersResponse;
 import com.bharath.ws.trainings.CustomerOrdersPortType;
@@ -16,6 +18,7 @@ import com.bharath.ws.trainings.GetOrdersResponse;
 import com.bharath.ws.trainings.Order;
 import com.bharath.ws.trainings.Product;
 
+@HandlerChain(file="soap-handler.xml")
 public class CustomersOrdersWSImpl implements CustomerOrdersPortType {
 
 	Map<BigInteger, List<Order>> customerOrders = new HashMap<>();
