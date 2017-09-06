@@ -1,0 +1,6 @@
+com\bharaththippireddy\trainings\jaxrs\Medicine.class
+com\bharaththippireddy\trainings\jaxrs\Prescription.class
+com\bharaththippireddy\trainings\jaxrs\Patient.class
+com\bharaththippireddy\trainings\jaxrs\PatientService.class
+com\github\training\rest\client\PatientServiceClient.class
+com\bharaththippireddy\trainings\jaxrs\PatientServiceImpl.class

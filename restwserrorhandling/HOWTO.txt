@@ -1,0 +1,56 @@
+Building and running the Project using Maven
+---------------------------------------
+
+1) Right CLick on the project in eclipse .Go to the Run As menu item and do 
+
+  Maven clean 
+  
+2) And then repeat the step 1 and do a
+  
+  Maven install
+  
+
+To Run the application:
+-------------------------
+
+Right click on the project, go to the Run As Menu Item and select run on the server option.
+
+
+Accessing the REST Patient Service
+=================================
+
+
+A RESTful patient services WADL can be accessed at this URL 
+
+http://localhost:8080/restwserrorhandling/services/patientservice?_wadl
+ 
+
+Error Test Scenarios:
+
+A HTTP GET request to URL http://localhost:8080/restwserrorhandling/services/patientservice/patients/130
+should return HTTP Response with a 404 Not Found error.  
+
+
+A HTTP PUT request to URL http://localhost:8080/restwserrorhandling/services/patientservice/patients
+with the data:
+
+<Patient>
+   <id>124</id>
+   <name>Bharath T</name>
+</Patient>
+
+should return a HTTP Response with a 404 Not Found error.
+
+
+Testing the JAX-RS Exception Mappers:
+
+A HTTP DELETE request to URL http://localhost:8080/restwserrorhandling/services/patientservice/patients/130
+
+should return a HTTP 500 Internal Server Error Response with the following error message in the body
+
+<response>
+<status>ERROR</status>
+<message>Business Exception</message>
+ </response>
+
+

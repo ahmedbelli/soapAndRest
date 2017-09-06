@@ -1,0 +1,7 @@
+com\bharathippireddy\trainings\jaxrs\exceptionmappers\BusinessExceptionMapper.class
+com\bharathippireddy\trainings\jaxrs\exceptions\SomeBusinessException.class
+com\bharaththippireddy\trainings\jaxrs\Patient.class
+com\bharaththippireddy\trainings\jaxrs\PatientServiceImpl.class
+com\bharaththippireddy\trainings\jaxrs\Medicine.class
+com\bharaththippireddy\trainings\jaxrs\Prescription.class
+com\bharaththippireddy\trainings\jaxrs\PatientService.class
