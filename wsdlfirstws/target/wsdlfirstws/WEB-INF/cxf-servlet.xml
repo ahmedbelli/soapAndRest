@@ -8,9 +8,6 @@
 		wsdlLocation="WEB-INF/wsdl/CustomerOrders.wsdl" implementor="com.bharath.ws.trainings.impl.CustomersOrdersWSImpl"
 		serviceName="customerOrders:CustomerOrdersService"
 		xmlns:customerOrders="http://trainings.ws.bharath.com/">
-		<jaxws:handlers>
-			<ref bean="siteHandler" />
-		</jaxws:handlers>
 	</jaxws:endpoint>
 
 	<bean id="siteHandler" class="com.bharat.trainigs.ws.handlers.SiteHandler" />
